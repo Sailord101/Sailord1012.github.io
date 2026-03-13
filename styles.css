@@ -1,0 +1,307 @@
+@font-face{
+    font-family:'site_page';
+    src:url(C:\Users\iamre\Documents\Programming\output\Portfolio\Fonts\ArchivoBlack-Regular.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't break the width */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainbody {
+    min-height: 100vh;
+    background: linear-gradient(50deg, #1A05A2, #8F0177);
+    background-attachment: fixed;
+    padding: 50px; /* Add padding to the body instead of every element */
+}
+
+.header {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    margin-top:50px;
+}
+
+.line_2 {
+    border: 0px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    margin-top:50px;
+}
+
+.regular_text {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 50px auto; /* Centers the bio and adds bottom spacing */
+}
+
+/* 2. Grid Setup */
+.grid-container {
+    display: grid;
+    /* Use 1fr 1.5fr for a nicer balance between image and text */
+    grid-template-columns: 1fr 1.5fr; 
+    gap: 30px; /* Adds space between the grid items */
+    align-items: stretch;
+}
+
+.grid-container_2 {
+    display: grid;
+    /* Use 1fr 1.5fr for a nicer balance between image and text */
+    grid-template-columns: 1fr; 
+    align-items: stretch;
+}
+
+
+.top_grid-container {
+    display: grid;
+    /* Use 1fr 1.5fr for a nicer balance between image and text */
+    grid-template-columns: 1fr 1.5fr; 
+    gap: 30px; /* Adds space between the grid items */
+    align-items: stretch;
+}
+
+.item {
+    color: white;
+    font-size: 20px;
+    padding: 3em;
+    background: linear-gradient(0deg,#F67D31,#DE1A58);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 30px black;
+}
+.item_6{
+    color: white;
+    font-size: 20px;
+    padding: 3em;
+    background-color: rgba(225, 225, 225, 0.0);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin-top: 50px;
+
+}
+
+
+.item_image {
+    background: linear-gradient(0deg, #F67D31, #DE1A58);
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+    border-radius: 0px;
+    overflow: hidden; /* Clips image to the border radius */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* r the placeholder text */
+    text-align: center;
+    padding: 8px;
+}
+
+.item_image:hover {
+    opacity: 1;
+    padding: 9px;
+
+}
+
+.image_1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes image fill the area without stretching */
+    filter: grayscale(100);
+    transition: 0.5s;
+}
+.image_1:hover{
+    filter: grayscale(0);
+}
+.title{
+    margin:auto;
+    margin-bottom: 25px;
+    color: white;
+    font-size: 25px;
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.regular_text_left{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    margin: 20px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item_image_box {
+    /* Set your specific fixed dimensions here */
+    width: 700px; 
+    height: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 20px;
+    overflow: hidden;
+    
+    display: flex;
+    /* Changed to 'center' so the image sits nicely in the fixed box */
+    align-items: center; 
+    justify-content: right; 
+    text-align: right;
+    
+    /* This ensures the fixed box stays in its grid cell correctly */
+    justify-self: right; 
+}
+
+
+
+.buttons{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 105px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #ffc300;
+    border-radius: 10px;
+    border: 0px;
+   
+
+}
+h2{
+    text-align:center;
+    color:azure;
+}
+
+.image_2{
+    width: 75px;
+    height: 50px;
+}
+
+.profile_background {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:150px;
+}
+
+.Profile_Desc{
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.0); /* Temporary color so you can see it */
+    border-radius: 25px;
+    overflow: hidden; /* Clips image to the border radius */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    color: white; /* For the placeholder text */
+    text-align: left;
+}
+
+h3{
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name{
+    font-size: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.undername{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #DE1A58;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border-radius: 7px;
+
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.navbar li{
+    float: right;
+}
+.navbar a:hover{
+    background-color:#fd1e65 ;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.text_highlight{
+    color: #ffc300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+.black_highlight{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:auto;
+}
+.item button:hover{
+    background-color: #d56d2b;
+    color: white;
+}
+
+.logo_container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.adobe_png{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.afinity_png{
+    width: 50px;
+    height: 50px;
+
+}
+.blender_logo{
+    width: 55px;
+    height: 45px;
+    margin-top: 10px;
+}
+
+.css_png{
+    width: 36px;
+    height: 50px;
+}
